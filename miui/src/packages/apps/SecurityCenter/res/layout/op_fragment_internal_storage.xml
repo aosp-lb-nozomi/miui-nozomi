@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.optimizecenter.storage.InternalStorageFragmentView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/internal_storage_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="85dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/uninstall_backup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_text_backup_and_cleanup_apps"
+            android:textColor="@color/optimize_button_text_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/uninstall_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_text_cleanup_apps"
+            android:textColor="@color/optimize_button_text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tool_bar" >
+
+        <com.miui.securitycenter.common.PinnedHeaderExpandableListView
+            android:id="@+id/app_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" />
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dip"
+            android:drawableTop="@drawable/icon_list_empty"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/loading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.miui.optimizecenter.storage.InternalStorageFragmentView>

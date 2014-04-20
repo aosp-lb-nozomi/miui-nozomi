@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/info"
+        style="@style/TextView.Info.Provision"
+        android:text="@string/traffic_protection_summary" />
+
+    <ImageView
+        android:id="@+id/seperator"
+        style="@style/Widget.Seperator" />
+
+    <Button
+        android:id="@+id/next"
+        style="@style/Button.Provision"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:text="@string/traffic_protection_next" />
+
+    <Button
+        android:id="@+id/unknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/next"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/transparent_bg"
+        android:text="@string/traffic_protection_unknown"
+        android:textColor="#333333" />
+
+    <LinearLayout
+        android:id="@+id/traffic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/unknown"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/traffic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:drawableRight="@drawable/mega"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/traffic2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:drawableRight="@drawable/mega"
+            android:inputType="number"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/traffic_layout"
+        android:layout_below="@id/seperator"
+        android:scaleType="center"
+        android:src="@drawable/traffic_protection" />
+
+</RelativeLayout>

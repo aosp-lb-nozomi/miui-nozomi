@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用文本颜色 -->
+    <color name="text_color_black">#cc000000</color>
+    <color name="text_color_black_hint">#88000000</color>
+    <color name="text_color_black_alpha_40">#63000000</color>
+    <color name="text_color_gray">#80000000</color>
+    <color name="text_color_white">@android:color/white</color>
+    <color name="text_color_dark_gray">#99000000</color>
+    <color name="text_color_orange">#ffe84700</color>
+    <color name="text_color_red">#ffee0000</color>
+    <color name="text_color_green">#ff4d840c</color>
+
+    <!-- 手势密码 -->
+    <color name="lockpattern_header_color">#afafaf</color>
+    <color name="lockpattern_footer_color">#000000</color>
+
+    <color name="shadow_color_black_alpha_30">#4c000000</color>
+
+    <!-- OCR -->
+    <color name="focus_view_middle_line">#ff00ff00</color> <!--#ffffffff four corner elements for viewfinder -->
+    <color name="focus_view_mask">#60000000</color> <!-- viewfinder exterior darkened area -->
+    <!-- 详情 -->
+    <color name="record_detail_recharge_order_color">#4a8c30</color>
+    <color name="record_detail_consume_order_color">#ef5925</color>
+    <color name="giftcard_detail_mibi_color">#ef5925</color>
+    <color name="giftcard_detail_unit_color">#4f4f4f</color>
+    <color name="detail_body_color">#a3a3a3</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <bool name="miui_font_scale_switch">true</bool>
+    <dimen name="yellowpage_navigation_search_background_offset">10dip</dimen>
+</resources>

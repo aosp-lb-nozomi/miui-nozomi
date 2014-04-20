@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/action_bar_bg" >
+
+    <Button
+        android:id="@+id/action_cancel"
+        style="@style/editEventTitileBarBtnStyle"
+        android:text="@string/discard_label" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/editEventTitileBarTitleStyle" />
+
+    <Button
+        android:id="@+id/action_done"
+        style="@style/editEventTitileBarBtnStyle"
+        android:text="@android:string/ok" />
+
+</LinearLayout>

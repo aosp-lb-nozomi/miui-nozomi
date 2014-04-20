@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.optimizecenter.view.QuickScanApkListItemMainView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItemMainView" >
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/ListItemMainViewArrow" />
+
+    <ImageView
+        android:id="@+id/icon"
+        style="@style/ListItemMainViewIcon"
+        android:layout_toRightOf="@id/arrow" />
+
+    <ImageView
+        android:id="@+id/subscript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon"
+        android:layout_alignRight="@id/icon"
+        android:src="@drawable/icon_tips_risk" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="@style/ListItemMainViewCheckbox" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_toLeftOf="@id/checkbox"
+        android:layout_toRightOf="@id/icon"
+        android:shrinkColumns="0,1"
+        android:stretchColumns="0,1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/ListItemMainViewTextPrimary"
+                android:minWidth="90dip" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/ListItemMainViewTextSecondary"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:minWidth="90dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/version"
+                style="@style/ListItemMainViewTextThird"
+                android:minWidth="90dip" />
+
+            <TextView
+                android:id="@+id/size"
+                style="@style/ListItemMainViewTextSecondary"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:minWidth="90dip" />
+        </TableRow>
+    </TableLayout>
+
+</com.miui.optimizecenter.view.QuickScanApkListItemMainView>

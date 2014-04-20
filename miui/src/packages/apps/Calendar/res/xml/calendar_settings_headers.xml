@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="account_and_calendar"
+        android:title="@string/account_and_calendar" >
+        <Preference
+            android:key="key_account_and_calendar"
+            android:title="@string/account_and_calendar_to_display" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="category_general"
+        android:title="@string/menu_general_preferences" >
+        <Preference
+            android:fragment="com.miui.calendar.settings.ReminderPreferences"
+            android:key="key_reminder_mode"
+            android:title="@string/default_reminder_mode" />
+        <ListPreference
+            android:defaultValue="@string/preferences_default_reminder_default"
+            android:dialogTitle="@string/preferences_default_reminder_dialog"
+            android:entries="@array/preferences_default_reminder_labels"
+            android:entryValues="@array/preferences_default_reminder_values"
+            android:key="preferences_default_reminder"
+            android:title="@string/preferences_default_reminder_title" />
+        <ListPreference
+            android:defaultValue="@string/preferences_week_start_day_default"
+            android:dialogTitle="@string/preferences_week_start_day_dialog"
+            android:entries="@array/preferences_week_start_day_labels"
+            android:entryValues="@array/preferences_week_start_day_values"
+            android:key="preferences_week_start_day"
+            android:title="@string/preferences_week_start_day_title" />
+        <Preference
+            android:fragment="com.miui.calendar.settings.TimeZonePreferences"
+            android:key="key_time_zone"
+            android:title="@string/time_zone" />
+        <!-- 
+         <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_load_images_under_data_conn"
+            android:title="@string/setting_load_images_under_data_conn"
+            />
+        -->
+    </PreferenceCategory>
+
+</PreferenceScreen>
